@@ -1,5 +1,7 @@
 FROM debian:buster-slim
 
+RUN printf "deb http://deb.debian.org/debian buster-backports main" > /etc/apt/sources.list.d/backports.list
+
 ARG PHP_VERSION=7.3
 ARG PHPMYADMIN=4.8.5
 ARG RUNPKGS="software-properties-common \
