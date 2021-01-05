@@ -1,17 +1,13 @@
-### OpenSIS Docker Image based on Debian LAMP 
+# OpenSIS Docker Image based on Debian LAMP 
 
 This is a working docker image for [OpenSIS Responsive Design](https://github.com/OS4ED/openSIS-Responsive-Design) based on Debian and using Apache2 and mariadb.
 
-Initial credentials for the DB are user  `sisadmin` password `sisadmin`
+## Build
 
-## Build Instructions
+* Build with `docker build . -t opensis`
 
-* Clone the git repo 
+## Run
 
-* Execute `docker build . -t opensis`
-
-* Start with `docker run -d --name opensis -p8080:80 opensis`
-
+* Start with `docker run -d -p8080:80 zoobab/opensis`
 * Point a browser to localhost:8080/opensis
-
-
+* Initial credentials for the DB are user `sisadmin` password `sisadmin`
